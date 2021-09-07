@@ -1,0 +1,9 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: provider-user
+eureka:
+  client:
+    service-url:
+      defaultZone: http://weiyongjian:456789@127.0.0.1:8081/eureka
