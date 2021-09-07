@@ -1,0 +1,20 @@
+Server:
+  port: 8080
+spring:
+  application:
+    name: eureka-8080
+  security:
+    user:
+      name: weiyongjian
+      password: 123456
+eureka:
+  server:
+    enable-self-preservation: true
+  client:
+    register-with-eureka: false # 不向注册中心注册自己
+    fetch-registry: false  # 不检索服务
+    service-url:
+      defaultZone:  http://weiyongjian:456789@127.0.0.1:8081/eureka/
+
+
+
